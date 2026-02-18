@@ -1,7 +1,9 @@
-#root {
-  max-width: 1280px;
+.main-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  min-height: 100vh;
+  gap: 2rem;
 }
-

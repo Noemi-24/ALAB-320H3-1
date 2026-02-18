@@ -1,12 +1,17 @@
 import Score from './Score.jsx'
+import './Learner.css'
 
-function Learner({name, bio, date, score}){
+function Learner({name, bio, scores}){
     return(
-        <div>
-            <h2>Name: {name}</h2>
-            <p>Bio: {bio}</p>
-            <Score date = {date} score = {score}/>
-        </div>
+        <div className='learner-container'>
+            <h2>{name}</h2>
+            <p>{bio}</p>
+            <div className='scores-container'>
+                {scores.map(score => (
+                    <Score key={score.date} {...score} />
+                ))} 
+            </div>                       
+        </div>       
     );
 }
 
