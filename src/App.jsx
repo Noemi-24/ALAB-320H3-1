@@ -9,7 +9,7 @@ function App() {
         <h1>Learners' Scores</h1>
       </header>
       <main className='main-content'>
-        {learnersData.map(learner => (
+        {learnersData.map((learner, index) => (
             <Learner key={index} {...learner} />
           ))}
         

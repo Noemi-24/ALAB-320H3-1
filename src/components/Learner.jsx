@@ -7,7 +7,7 @@ function Learner({name, bio, scores}){
             <h2>{name}</h2>
             <p>{bio}</p>
             <div className='scores-container'>
-                {scores.map(score => (
+                {scores.map((score, index) => (
                     <Score key={index} {...score} />
                 ))} 
             </div>                       
