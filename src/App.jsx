@@ -4,12 +4,17 @@ import learnersData from './data/learnersData';
 
 function App() {
   return (
-    <main className='main-content'>
-       {learnersData.map(learner => (
-          <Learner key={learner.name} {...learner} />
-        ))}
-      
-    </main>
+    <>
+      <header>
+        <h1>Learners' Scores</h1>
+      </header>
+      <main className='main-content'>
+        {learnersData.map(learner => (
+            <Learner key={learner.name} {...learner} />
+          ))}
+        
+      </main>
+    </>
   );
 }
 
