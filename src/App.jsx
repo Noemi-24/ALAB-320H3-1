@@ -10,7 +10,7 @@ function App() {
       </header>
       <main className='main-content'>
         {learnersData.map(learner => (
-            <Learner key={learner.name} {...learner} />
+            <Learner key={index} {...learner} />
           ))}
         
       </main>
